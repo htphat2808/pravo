@@ -1,0 +1,40 @@
+@mixin generate-color-classes($colors, $property, $prefix) {
+  @each $key, $value in $colors {
+    .#{$prefix}-#{$key} {
+      #{$property}: $value;
+    }
+    .#{$prefix}-#{$key}-hover:hover {
+      #{$property}: $value;
+    }
+  }
+}
+
+@mixin generate-size-classes($sizes, $property, $prefix, $unit: "px") {
+  @for $size from 0 to $sizes + 1 {
+    .#{$prefix}-#{$size} {
+      #{$property}: #{$size + $unit};
+    }
+  }
+}
+@mixin generate-size-classes-for-two-properties(
+  $sizes,
+  $property1,
+  $property2,
+  $prefix,
+  $unit: "px"
+) {
+  @for $size from 0 to $sizes + 1 {
+    .#{$prefix}-#{$size} {
+      #{$property1}: #{$size + $unit};
+      #{$property2}: #{$size + $unit};
+    }
+  }
+}
+
+@mixin generate-classes($values, $property, $prefix) {
+  @each $key, $value in $values {
+    .#{$prefix}-#{$key} {
+      #{$property}: $value;
+    }
+  }
+}

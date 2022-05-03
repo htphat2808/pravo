@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/* COFIG */
+
+:root {
+  /*color*/
+  --white-color: #ffff;
+  --pink-color-1: #fef8ee;
+  --pink-color-2: #f1dada;
+  --pink-color-3: #f6a8a5;
+  --pink-color-4: #f1dada;
+  --pink-color-5: #f9f0f0;
+  --yellow-color-1: #d4a93a;
+  --yellow-color-2: #fcd178;
+  --yellow-color-3: #fff8ed;
+  --black-color: #000;
+  --header-color: #6592c0;
+  --gray-color-1: #606060;
+  --gray-color-2: #707070;
+  --blue-color-1: #1d477f;
+  --blue-color-2: #0a4783;
+  --blue-color-3: #3466a5;
+  --blue-color-4: #5cb7ce;
+  --blue-color-5: #def1f5;
+  /*font*/
+  --font-family: Arial, Helvetica, sans-serif;
+  --font-size-base: 16px;
+  --font-size-p: 14px;
+  --font-size-h1: 1.75em;
+  --font-size-h2: 1.5em;
+  --font-size-h3: 1.25em;
+  --font-size-h4: 1.125em;
+  --font-size-h5: 1em;
+  --font-size-h6: 0.875em;
+}
+
+/* RESET */
+
+* {
+  outline: 0;
+}
+
+body {
+  font-size: var(--font-size-base);
+  font-family: var(--font-family);
+  margin: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+ul {
+  padding: 1;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+p {
+  font-size: var(--font-size-p);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+}
+
+h5 {
+  font-size: var(--font-size-h5);
+}
+
+h6 {
+  font-size: var(--font-size-h6);
+}
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+.fixed {
+  position: fixed;
+}
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0;
+}

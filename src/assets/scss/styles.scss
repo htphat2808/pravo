@@ -1,0 +1,130 @@
+@import "variables";
+@import "mixins";
+@import "base";
+@import "grid";
+@import "components";
+
+@include generate-classes($displays, "display", "d");
+@include generate-classes($text-aligns, "text-align", "text");
+@include generate-classes($align-items, "align-items", "align-items");
+@include generate-classes($justify-content, "justify-content", "content");
+@include generate-classes($flex-wraps, "flex-wrap", "flex");
+@include generate-classes($shadows, "box-shadow", "shadow");
+
+@include generate-color-classes($colors, "color", "text");
+@include generate-color-classes($colors, "background-color", "bg-color");
+@include generate-color-classes($colors, "border-color", "bd-color");
+
+@include generate-size-classes($font-sizes, "font-size", "fs");
+@include generate-size-classes($spacing-sizes, "margin", "mg");
+@include generate-size-classes-for-two-properties(
+  $spacing-sizes,
+  "margin-top",
+  "margin-bottom",
+  "mgy"
+);
+@include generate-size-classes-for-two-properties(
+  $spacing-sizes,
+  "margin-left",
+  "margin-right",
+  "mgx"
+);
+@include generate-size-classes($spacing-sizes, "margin-top", "mgt");
+@include generate-size-classes($spacing-sizes, "margin-bottom", "mgb");
+@include generate-size-classes($spacing-sizes, "margin-left", "mgl");
+@include generate-size-classes($spacing-sizes, "margin-right", "mgr");
+@include generate-size-classes($spacing-sizes, "padding", "pd");
+@include generate-size-classes-for-two-properties(
+  $spacing-sizes,
+  "padding-top",
+  "padding-bottom",
+  "pdy"
+);
+@include generate-size-classes-for-two-properties(
+  $spacing-sizes,
+  "padding-left",
+  "padding-right",
+  "pdx"
+);
+@include generate-size-classes($spacing-sizes, "padding-top", "pdt");
+@include generate-size-classes($spacing-sizes, "padding-bottom", "pdb");
+@include generate-size-classes($spacing-sizes, "padding-left", "pdl");
+@include generate-size-classes($spacing-sizes, "padding-right", "pdr");
+@include generate-size-classes($content-sizes, "width", "w");
+@include generate-size-classes($content-sizes-percent, "width", "wp", "%");
+@include generate-size-classes($content-sizes, "height", "h");
+@include generate-size-classes($content-sizes-percent, "height", "hp", "%");
+@include generate-size-classes($content-sizes, "border-radius", "br");
+@include generate-size-classes(
+  $content-sizes-percent,
+  "border-radius",
+  "brp",
+  "%"
+);
+
+/*responsive*/
+
+@media only screen and (min-width: 1024px) {
+  @include generate-classes($displays, "display", "dt-d");
+  @include generate-classes($text-aligns, "text-align", "dt-text");
+  @include generate-classes($align-items, "align-items", "dt-align-items");
+  @include generate-classes($justify-content, "justify-content", "dt-content");
+  @include generate-classes($flex-wraps, "flex-wrap", "dt-flex");
+  @include generate-classes($shadows, "box-shadow", "dt-shadow");
+
+  @include generate-color-classes($colors, "color", "dt-text");
+  @include generate-color-classes($colors, "background-color", "dt-bg-color");
+  @include generate-color-classes($colors, "border-color", "dt-bd-color");
+
+  @include generate-size-classes($font-sizes, "font-size", "dt-fs");
+  @include generate-size-classes($spacing-sizes, "margin", "dt-mg");
+  @include generate-size-classes-for-two-properties(
+    $spacing-sizes,
+    "margin-top",
+    "margin-bottom",
+    "dt-mgy"
+  );
+  @include generate-size-classes-for-two-properties(
+    $spacing-sizes,
+    "margin-left",
+    "margin-right",
+    "dt-mgx"
+  );
+  @include generate-size-classes($spacing-sizes, "margin-top", "dt-mgt");
+  @include generate-size-classes($spacing-sizes, "margin-bottom", "dt-mgb");
+  @include generate-size-classes($spacing-sizes, "margin-left", "dt-mgl");
+  @include generate-size-classes($spacing-sizes, "margin-right", "dt-mgr");
+  @include generate-size-classes($spacing-sizes, "padding", "dt-pd");
+  @include generate-size-classes-for-two-properties(
+    $spacing-sizes,
+    "padding-top",
+    "padding-bottom",
+    "dt-pdy"
+  );
+  @include generate-size-classes-for-two-properties(
+    $spacing-sizes,
+    "padding-left",
+    "padding-right",
+    "dt-pdx"
+  );
+  @include generate-size-classes($spacing-sizes, "padding-top", "dt-pdt");
+  @include generate-size-classes($spacing-sizes, "padding-bottom", "dt-pdb");
+  @include generate-size-classes($spacing-sizes, "padding-left", "dt-pdl");
+  @include generate-size-classes($spacing-sizes, "padding-right", "dt-pdr");
+  @include generate-size-classes($content-sizes, "width", "w");
+  @include generate-size-classes($content-sizes-percent, "width", "dt-wp", "%");
+  @include generate-size-classes($content-sizes, "height", "h");
+  @include generate-size-classes(
+    $content-sizes-percent,
+    "height",
+    "dt-hp",
+    "%"
+  );
+  @include generate-size-classes($content-sizes, "border-radius", "dt-br");
+  @include generate-size-classes(
+    $content-sizes-percent,
+    "border-radius",
+    "dt-brp",
+    "%"
+  );
+}

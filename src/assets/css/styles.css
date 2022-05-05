@@ -8,6 +8,7 @@
   --pink-color-3: #f6a8a5;
   --pink-color-4: #f1dada;
   --pink-color-5: #f9f0f0;
+  
   --yellow-color-1: #d4a93a;
   --yellow-color-2: #fcd178;
   --yellow-color-3: #fff8ed;
@@ -2541,7 +2542,9 @@ filter:hover .filter {
 .pdy-50 {
   padding-top: 50px;
   padding-bottom: 50px; }
-
+.pdy-60 {
+    padding-top: 60px;
+    padding-bottom: 60px; }
 .pdx-0 {
   padding-left: 0px;
   padding-right: 0px; }

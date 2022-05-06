@@ -258,20 +258,18 @@ filter:hover .filter {
 }
 
 .border-bottom-1 {
-  border-bottom: 1px solid var(--smoke-white-color);
+  border-bottom: 1px solid var(--blue-color-4);
 }
 .border-bottom-2 {
-  border-bottom: 2px solid var(--smoke-white-color);
+  border-bottom: 2px solid var(--blue-color-4));
 }
 .border-bottom-3 {
-  border-bottom: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--blue-color-4));
 }
-.border-bottom-gray {
-  border-bottom: 1px solid var(--gray-color-1);
+.border-bottom-gray-2-5 {
+  border-bottom: 5px solid var(--gray-color-2);
 }
-.border-bottom-gray-2 {
-  border-bottom: 10px outset var(--gray-color-1);
-}
+
 .border-radius-2 {
   border-radius: 2px;
 }

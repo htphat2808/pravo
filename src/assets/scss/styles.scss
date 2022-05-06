@@ -14,16 +14,6 @@
 @include generate-color-classes($colors, "color", "text");
 @include generate-color-classes($colors, "background-color", "bg-color");
 @include generate-color-classes($colors, "border-color", "bd-color");
-@include generate-size-classes-for-two-properties(
-  $spacing-sizes,
-  "border-top",
-  "bt-color"
-);
-@include generate-size-classes-for-two-properties(
-  $spacing-sizes,
-  "border-bottom",
-  "bb-color"
-);
 
 @include generate-size-classes($font-sizes, "font-size", "fs");
 @include generate-size-classes($spacing-sizes, "margin", "mg");

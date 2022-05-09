@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;500;600;700&display=swap");
+.fl-montserrat {
+  font-family: "Montserrat", sans-serif; }
+
+.fl-dancing-script {
+  font-family: "Dancing Script";
+  font-weight: 400 !important; }
+
 /* COFIG */
 :root {
   /*color*/
@@ -22,7 +30,7 @@
   --blue-color-4: #5cb7ce;
   --blue-color-5: #def1f5;
   /*font*/
-  --font-family: Arial, Helvetica, sans-serif;
+  --font-family: "Montserrat", sans-serif;
   --font-size-base: 16px;
   --font-size-p: 14px;
   --font-size-h1: 1.75em;

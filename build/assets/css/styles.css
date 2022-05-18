@@ -62,7 +62,9 @@ a {
   color: var(--primary-color); }
 
 p {
-  font-size: var(--font-size-p); }
+  font-size: var(--font-size-p);
+  line-height: 30px;
+  margin: 0; }
 
 h1 {
   font-size: var(--font-size-h1); }

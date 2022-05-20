@@ -9,94 +9,7 @@
   </head>
   <body>
     <!-- header -->
-    <header>
-      <div class="bg-color-header">
-        <div class="container-1280 flex content-between">
-          <div class="row align-items-center">
-            <img
-              src="assets/img/svg/icon-location.svg"
-              alt="icon-location"
-              class="w-12 h-12 mx-right-10"
-            />
-            <p class="fs-15 text-white" style="font-weight: 500">
-              <b> Provo Pediatric Dentistry:</b> 745 North 500 West, Ste. 103,
-              Provo, UT 84601
-            </p>
-          </div>
-          <div class="row align-items-center">
-            <img
-              src="assets/img/svg/icon-location.svg"
-              alt="icon-location"
-              class="w-12 h-12 mx-right-12"
-            />
-            <p class="fs-15 text-white" style="font-weight: 500">
-              <b> Price Pediatric Dental: </b>391 North 400 East, Price, UT
-              84501
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="container-1280">
-        <div class="row align-items-center content-between text-center pdy-20">
-          <div class="col-4 dt-col-5 text-center">
-            <b
-              href=""
-              class="fs-15 text-gray-2 text-decoration mx-right-10"
-              style="font-weight: 500"
-              >Patient Forms</b
-            >
-            <b
-              href=""
-              class="fs-15 text-gray-2 text-decoration"
-              style="font-weight: 500"
-              >COVID-19 Update</b
-            >
-          </div>
-          <div class="col-4 dt-col-2 content-center">
-            <img src="assets/img/LOGO.jpg" alt="LOGO" class="w-180 h-88" />
-          </div>
-          <div class="col-4 dt-col-5">
-            <div class="flex align-items-center content-end">
-              <div class="text-center mx-right-20">
-                <div class="fs-14 text-blue-3">Call us</div>
-                <b class="fs-18 text-blue-3">801-373-4200</b>
-              </div>
-              <button
-                class="bg-color-blue-3 align-items-center content-center br-20 border-none"
-              >
-                <p class="mgy-10 mgx-10 text-white fs-14">BOOk APPOINTMENT</p>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-1080">
-        <div class="row content-between align-items-center">
-          <b class="col fs-15 text-gray-2" style="font-weight: 500">ABOUT US</b>
-          <b class="col fs-15 text-gray-2" style="font-weight: 500">OUR TEAM</b>
-          <b class="col fs-15 text-gray-2" style="font-weight: 500">SERVICES</b>
-          <b class="col fs-15 text-gray-2" style="font-weight: 500"
-            >PATIENT INFO</b
-          >
-          <b class="col fs-15 text-gray-2" style="font-weight: 500"
-            >FINANCIAL</b
-          >
-          <b class="col fs-15 text-gray-2" style="font-weight: 500">REVIEWS</b>
-          <b class="col fs-15 text-gray-2" style="font-weight: 500">PAYMENT</b>
-          <b class="col fs-15 text-gray-2" style="font-weight: 500"
-            >LOCATIONS</b
-          >
-          <div class="flex">
-            <b class="fs-15 align-items-center">
-              <span class="text-yellow-1">✦</span>
-              <span class="text-gray-2" style="font-weight: 500">CONTACT</span>
-              <span class="text-yellow-1">✦</span></b
-            >
-          </div>
-        </div>
-      </div>
-    </header>
-
+    @@include('../sections/header.html')
     <!-- header end -->
     <!-- container -->
     <div class="container-1366 pdy-20">
@@ -361,46 +274,47 @@
     </div>
     <div class="bg-color-yellow-3">
       <div class="container-1280 text-center pdy-60">
-  <h1 class="text-blue-4 fs-58">Our Services</h1>
-  <h2 class="text-blue-3 fs-44">We provide care to children</h2>
-  <img src="assets/img/Path-bend.png" alt="" class="w-140 h-6" />
-  <div class="row content-between pdy-20">
-    <div class="col-3 mgx-10">
-      <img src="assets/img/c2.png" alt="b1" />
-    </div>
-    <div class="col-3 mgx-10">
-      <img src="assets/img/c3.png" alt="b9" />
-    </div>
-    <div class="col-3 mgx-10">
-      <img src="assets/img/c2.png" alt="b3" />
-    </div>
-    <div class="col-3 mgx-10">
-      <img src="assets/img/c3.png" alt="b4" />
-    </div>
-  </div>
-  <div class="row content-between pdy-10">
-    <div class="col-3 mgx-10">
-      <img src="assets/img/c2.png" alt="b1" />
-    </div>
-    <div class="col-3 mgx-10">
-      <img src="assets/img/c3.png" alt="b9" />
-    </div>
-    <div class="col-3 mgx-10">
-      <img src="assets/img/c2.png" alt="b3" />
-    </div>
-    <div class="col-3 mgx-10">
-      <img src="assets/img/c3.png" alt="b4" />
-    </div>
-  </div>
-  <div class="row content-center pdy-10">
-    <div
-      class="col-3 bg-color-yellow-1 br-20 mx-right-20 text-center align-items-center"
-    >
-      <div class="fs-15 text-white align-items-center pd-10">MORE SERVICES</div>
-    </div>
-  </div>
-</div>
-
+        <h1 class="text-blue-4 fs-58">Our Services</h1>
+        <h2 class="text-blue-3 fs-44">We provide care to children</h2>
+        <img src="assets/img/Path-bend.png" alt="" class="w-140 h-6" />
+        <div class="row content-between pdy-20">
+          <div class="col-3 mgx-10">
+            <img src="assets/img/c2.png" alt="b1" />
+          </div>
+          <div class="col-3 mgx-10">
+            <img src="assets/img/c3.png" alt="b9" />
+          </div>
+          <div class="col-3 mgx-10">
+            <img src="assets/img/c2.png" alt="b3" />
+          </div>
+          <div class="col-3 mgx-10">
+            <img src="assets/img/c3.png" alt="b4" />
+          </div>
+        </div>
+        <div class="row content-between pdy-10">
+          <div class="col-3 mgx-10">
+            <img src="assets/img/c2.png" alt="b1" />
+          </div>
+          <div class="col-3 mgx-10">
+            <img src="assets/img/c3.png" alt="b9" />
+          </div>
+          <div class="col-3 mgx-10">
+            <img src="assets/img/c2.png" alt="b3" />
+          </div>
+          <div class="col-3 mgx-10">
+            <img src="assets/img/c3.png" alt="b4" />
+          </div>
+        </div>
+        <div class="row content-center pdy-10">
+          <div
+            class="col-3 bg-color-yellow-1 br-20 mx-right-20 text-center align-items-center"
+          >
+            <div class="fs-15 text-white align-items-center pd-10">
+              MORE SERVICES
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="bg-color-blue-3">
       <div class="container-1080">
@@ -441,209 +355,217 @@
     <div class="bg-color-yellow-3">
       <div class="container-1080 pdy-60">
         <div class="row align-items-center">
-  <div class="col-6 dt-col-6 mx-right-20">
-    <h1 class="fs-58 text-blue-4">Testimonials</h1>
-    <h2 class="fs-44 text-blue-3">Five-Star Dentistry!</h2>
-    <div>
-      <img src="assets/img/Path-bend.png" alt="" class="w-140 h-6 pdy-20" />
-    </div>
-    <div>
-      <img
-        src="assets/img/svg/icon-quotes.svg"
-        alt="icon-quotes"
-        class="w-50 h-43"
-      />
-    </div>
-    <p class="fs-16 text-gray-2">
-      I have taken both of my children to Provo Pediatric’s for 13 years. We
-      have never had a bad experience. Dr Markham and Dr Lund are both amazing
-      with children. They do great work and are 100% trustworthy! 😊😊😊”
-    </p>
-    <div class="row content-between align-items-center">
-      <p>━ Jenny F.</p>
-      <div class="flex">
-        <img
-          src="assets/img/svg/arrow-left.svg"
-          alt=""
-          class="w-32 h-14 mx-right-20"
-        />
-        <img src="assets/img/svg/arrow-right.svg" alt="" class="w-32 h-14" />
-      </div>
-    </div>
-    <div class="row">
-      <div
-        class="col-5 dt-col-5 bg-color-yellow-1 br-24 text-center align-items-center"
-      >
-        <div class="fs-15 text-white align-items-center pd-10">
-          See What Others Say
+          <div class="col-6 dt-col-6 mx-right-20">
+            <h1 class="fs-58 text-blue-4">Testimonials</h1>
+            <h2 class="fs-44 text-blue-3">Five-Star Dentistry!</h2>
+            <div>
+              <img
+                src="assets/img/Path-bend.png"
+                alt=""
+                class="w-140 h-6 pdy-20"
+              />
+            </div>
+            <div>
+              <img
+                src="assets/img/svg/icon-quotes.svg"
+                alt="icon-quotes"
+                class="w-50 h-43"
+              />
+            </div>
+            <p class="fs-16 text-gray-2">
+              I have taken both of my children to Provo Pediatric’s for 13
+              years. We have never had a bad experience. Dr Markham and Dr Lund
+              are both amazing with children. They do great work and are 100%
+              trustworthy! 😊😊😊”
+            </p>
+            <div class="row content-between align-items-center">
+              <p>━ Jenny F.</p>
+              <div class="flex">
+                <img
+                  src="assets/img/svg/arrow-left.svg"
+                  alt=""
+                  class="w-32 h-14 mx-right-20"
+                />
+                <img
+                  src="assets/img/svg/arrow-right.svg"
+                  alt=""
+                  class="w-32 h-14"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-5 dt-col-5 bg-color-yellow-1 br-24 text-center align-items-center"
+              >
+                <div class="fs-15 text-white align-items-center pd-10">
+                  See What Others Say
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 dt-col-6">
+            <div class="flex pdy-20">
+              <img src="assets/img/b4.jpg" alt="" />
+            </div>
+            <div class="flex">
+              <div class="mx-right-20">
+                <img src="assets/img/b3.jpg" alt="" />
+              </div>
+              <div class="">
+                <img src="assets/img/b7.jpg" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-6 dt-col-6">
-    <div class="flex pdy-20">
-      <img src="assets/img/b4.jpg" alt="" />
-    </div>
-    <div class="flex">
-      <div class="mx-right-20">
-        <img src="assets/img/b3.jpg" alt="" />
-      </div>
-      <div class="">
-        <img src="assets/img/b7.jpg" alt="" />
-      </div>
-    </div>
-  </div>
-</div>
-
       </div>
     </div>
     <div class="container-1080 pdy-20">
       <div class="align-items-center text-center">
-  <h2 class="text-blue-3 fs-44">Latest News</h2>
-  <img src="assets/img/Path-bend.png" alt="" class="w-140 h-6" />
-  <p class="fs-16 text-gray-2">
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
-  </p>
-</div>
-<div class="row align-items-center content-between">
-  <div class="col-4">
-    <img
-      src="assets/img/latestnew-1.jpg"
-      alt=""
-      style="width: 338px; height: 226px"
-    />
-    <div class="pdy-10 mx-right-20">
-      <b class="fs-22">Covid-19 These infection control and safety</b>
-    </div>
-    <div class="mx-right-20">
-      <p class="fs-15 text-gray-2">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy…
-      </p>
-      <img src="assets/img/blue1.jpg" alt="" />
-    </div>
-    <div class="row content-between">
-      <div class="col-4">
-        <p class="fs-15 text-gray-2">April 10, 2022</p>
+        <h2 class="text-blue-3 fs-44">Latest News</h2>
+        <img src="assets/img/Path-bend.png" alt="" class="w-140 h-6" />
+        <p class="fs-16 text-gray-2">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+        </p>
       </div>
-      <div class="col-4">
-        <p class="fs-15 text-blue-4">Read More ➔</p>
+      <div class="row align-items-center content-between">
+        <div class="col-4">
+          <img
+            src="assets/img/latestnew-1.jpg"
+            alt=""
+            style="width: 338px; height: 226px"
+          />
+          <div class="pdy-10 mx-right-20">
+            <b class="fs-22">Covid-19 These infection control and safety</b>
+          </div>
+          <div class="mx-right-20">
+            <p class="fs-15 text-gray-2">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy…
+            </p>
+            <img src="assets/img/blue1.jpg" alt="" />
+          </div>
+          <div class="row content-between">
+            <div class="col-4">
+              <p class="fs-15 text-gray-2">April 10, 2022</p>
+            </div>
+            <div class="col-4">
+              <p class="fs-15 text-blue-4">Read More ➔</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <img
+            src="assets/img/latestnew-2.jpg"
+            alt=""
+            style="width: 338px; height: 226px"
+          />
+          <div class="pdy-10 mx-right-20">
+            <b class="fs-22">What Happens After a Tooth Is Extracted?</b>
+          </div>
+          <div class="mx-right-20">
+            <p class="fs-15 text-gray-2">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy…
+            </p>
+            <img src="assets/img/blue1.jpg" alt="" />
+          </div>
+          <div class="row content-between">
+            <div class="col-4">
+              <p class="fs-15 text-gray-2">April 10, 2022</p>
+            </div>
+            <div class="col-4">
+              <p class="fs-15 text-blue-4">Read More ➔</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <img
+            src="assets/img/latestnew-3.jpg"
+            alt=""
+            style="width: 338px; height: 226px"
+          />
+          <div class="pdy-10 mx-right-20">
+            <b class="fs-22">What Happens After a Tooth Is Extracted?</b>
+          </div>
+          <div class="mx-right-20">
+            <p class="fs-15 text-gray-2">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy…
+            </p>
+            <img src="assets/img/blue1.jpg" alt="" />
+          </div>
+          <div class="row content-between">
+            <div class="col-4">
+              <p class="fs-15 text-gray-2">April 10, 2022</p>
+            </div>
+            <div class="col-4">
+              <p class="fs-15 text-blue-4">Read More ➔</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  <div class="col-4">
-    <img
-      src="assets/img/latestnew-2.jpg"
-      alt=""
-      style="width: 338px; height: 226px"
-    />
-    <div class="pdy-10 mx-right-20">
-      <b class="fs-22">What Happens After a Tooth Is Extracted?</b>
-    </div>
-    <div class="mx-right-20">
-      <p class="fs-15 text-gray-2">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy…
-      </p>
-      <img src="assets/img/blue1.jpg" alt="" />
-    </div>
-    <div class="row content-between">
-      <div class="col-4">
-        <p class="fs-15 text-gray-2">April 10, 2022</p>
-      </div>
-      <div class="col-4">
-        <p class="fs-15 text-blue-4">Read More ➔</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-4">
-    <img
-      src="assets/img/latestnew-3.jpg"
-      alt=""
-      style="width: 338px; height: 226px"
-    />
-    <div class="pdy-10 mx-right-20">
-      <b class="fs-22">What Happens After a Tooth Is Extracted?</b>
-    </div>
-    <div class="mx-right-20">
-      <p class="fs-15 text-gray-2">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy…
-      </p>
-      <img src="assets/img/blue1.jpg" alt="" />
-    </div>
-    <div class="row content-between">
-      <div class="col-4">
-        <p class="fs-15 text-gray-2">April 10, 2022</p>
-      </div>
-      <div class="col-4">
-        <p class="fs-15 text-blue-4">Read More ➔</p>
-      </div>
-    </div>
-  </div>
-</div>
-
     </div>
     <!-- container end -->
     <!-- footer  -->
-    <footer class="bg-color-gray-3"><img src="assets/img/footer-room.png" alt="" />
-<div
-  class="bg-color-white container-1080"
-  style="position: relative; margin-top: -100px"
->
-  <div class="row pd-20 content-between">
-    <div class="mx-right-40">
-      <img src="assets/img/maps1.jpg" alt="" />
-      <p class="fs-20 text-blue-3">
-        PROVO <span class="text-black fs-20"> PEDIATRIC DENTISTRY </span>
-      </p>
-      <div class="row mx-right-10 content-between">
-        <div>
-          <p class="fs-17 text-gray-2">Contact us ━</p>
-          <p class="fs-15 text-gray-2">745 North 500 West, Ste. 103</p>
-          <p class="fs-15 text-gray-2">Provo, UT 84601</p>
-          <b class="fs-18">801-373-4200</b>
-        </div>
-        <div>
-          <p class="fs-17 text-gray-2">Hours ━</p>
-          <p class="fs-14 text-gray-2">Mon & Tue // 7:00am - 5:00pm</p>
-          <p class="fs-14 text-gray-2">Wed // 8:00am - 5:00pm</p>
-          <p class="fs-14 text-gray-2">Thu 7:00am - 5:00pm</p>
-          <p class="fs-14 text-gray-2">Fri // 7:00am - 2:00pm</p>
-          <p class="fs-14 text-gray-2">Sat & Sun // Closed!</p>
+    <footer class="bg-color-gray-3">
+      <img src="assets/img/footer-room.png" alt="" />
+      <div
+        class="bg-color-white container-1080"
+        style="position: relative; margin-top: -100px"
+      >
+        <div class="row pd-20 content-between">
+          <div class="mx-right-40">
+            <img src="assets/img/maps1.jpg" alt="" />
+            <p class="fs-20 text-blue-3">
+              PROVO <span class="text-black fs-20"> PEDIATRIC DENTISTRY </span>
+            </p>
+            <div class="row mx-right-10 content-between">
+              <div>
+                <p class="fs-17 text-gray-2">Contact us ━</p>
+                <p class="fs-15 text-gray-2">745 North 500 West, Ste. 103</p>
+                <p class="fs-15 text-gray-2">Provo, UT 84601</p>
+                <b class="fs-18">801-373-4200</b>
+              </div>
+              <div>
+                <p class="fs-17 text-gray-2">Hours ━</p>
+                <p class="fs-14 text-gray-2">Mon & Tue // 7:00am - 5:00pm</p>
+                <p class="fs-14 text-gray-2">Wed // 8:00am - 5:00pm</p>
+                <p class="fs-14 text-gray-2">Thu 7:00am - 5:00pm</p>
+                <p class="fs-14 text-gray-2">Fri // 7:00am - 2:00pm</p>
+                <p class="fs-14 text-gray-2">Sat & Sun // Closed!</p>
+              </div>
+            </div>
+          </div>
+          <div class="#">
+            <img src="assets/img/maps2.jpg" alt="" />
+            <p class="fs-20 text-yellow-1">
+              PRICE <span class="text-black fs-20"> PEDIATRIC DENTISTRY </span>
+            </p>
+            <div class="row mx-right-10 content-between">
+              <div>
+                <p class="fs-17 text-gray-2">Contact us ━</p>
+                <p class="fs-15 text-gray-2">391 North 400 East</p>
+                <p class="fs-15 text-gray-2">Price, UT 84501</p>
+                <b class="fs-18">435-637-9590</b>
+              </div>
+              <div>
+                <p class="fs-17 text-gray-2">Hours ━</p>
+                <p class="fs-14 text-gray-2">Mon & Tue // 8:00am - 5:00pm</p>
+                <p class="fs-14 text-gray-2">Wed & Thu // Admin hours</p>
+                <p class="fs-14 text-gray-2">Fri // 8:00am - 5:00pm</p>
+                <p class="fs-14 text-gray-2">Sat - Sun // Closed!</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="#">
-      <img src="assets/img/maps2.jpg" alt="" />
-      <p class="fs-20 text-yellow-1">
-        PRICE <span class="text-black fs-20"> PEDIATRIC DENTISTRY </span>
-      </p>
-      <div class="row mx-right-10 content-between">
-        <div>
-          <p class="fs-17 text-gray-2">Contact us ━</p>
-          <p class="fs-15 text-gray-2">391 North 400 East</p>
-          <p class="fs-15 text-gray-2">Price, UT 84501</p>
-          <b class="fs-18">435-637-9590</b>
-        </div>
-        <div>
-          <p class="fs-17 text-gray-2">Hours ━</p>
-          <p class="fs-14 text-gray-2">Mon & Tue // 8:00am - 5:00pm</p>
-          <p class="fs-14 text-gray-2">Wed & Thu // Admin hours</p>
-          <p class="fs-14 text-gray-2">Fri // 8:00am - 5:00pm</p>
-          <p class="fs-14 text-gray-2">Sat - Sun // Closed!</p>
-        </div>
+      <div class="text-center">
+        <p class="fs-14 pd-16 mg-0">
+          © Copyright 2021 Provo Pediatric Dentistry. All Rights Reserved -
+          Privacy Policy - Website by PatientHoney
+        </p>
       </div>
-    </div>
-  </div>
-</div>
-<div class="text-center">
-  <p class="fs-14 pd-16 mg-0">
-    © Copyright 2021 Provo Pediatric Dentistry. All Rights Reserved - Privacy
-    Policy - Website by PatientHoney
-  </p>
-</div>
-</footer>
+    </footer>
     <!-- footer end -->
   </body>
 </html>
